@@ -1,0 +1,43 @@
+# Compiled class files
+**/target/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Maven wrapper files generated
+.mvn/wrapper/maven-wrapper.jar
+
+# Node stuff if any later
+node_modules/
+
+# OS-specific
+Thumbs.db
+
+# Private inputs and outputs
+src/test/resources
+inputs/
+outputs/
+
+# Environment files that may contain secrets
+.env
+.env.local
+*.session
+
+# Other build dirs
+build/
