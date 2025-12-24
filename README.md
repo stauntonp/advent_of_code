@@ -40,19 +40,3 @@ Add new day
 
 Notes
 - This scaffold uses Java 17 and JUnit Jupiter. You can change the Java target in `pom.xml`.
-
-Repository setup
-- Initialize and commit the repository locally using the provided script:
-
-```powershell
-PowerShell -ExecutionPolicy Bypass -File scripts/init-repo.ps1
-```
-
-- To create a GitHub repo and push, install `gh` (GitHub CLI) and run:
-
-```bash
-gh repo create --public --source=. --remote=origin
-git push -u origin main
-```
-
-- To avoid accidentally committing private puzzle inputs, this project ignores `src/test/resources/input/private/`, `inputs/`, and `outputs/`. Add any specific private subfolders to `.gitignore`.

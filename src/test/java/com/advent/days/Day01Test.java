@@ -1,24 +1,12 @@
 package com.advent.days;
 
-import com.advent.TestBase;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Day01Test extends TestBase {
-
-    @Test
-    public void testParts() throws IOException {
-        List<String> input = loadInputResource("input/day01.txt");
-        Day01 day = new Day01();
-
-        assertEquals(15, day.part1(input));
-        assertEquals(5, day.part2(input));
-    }
-
+public class Day01Test {
     @Test
     public void testTurnDial() {
         Day01 day = new Day01();

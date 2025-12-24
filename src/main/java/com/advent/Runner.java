@@ -1,7 +1,6 @@
 package com.advent;
 
-import com.advent.days.Day01;
-import com.advent.days.Day;
+import com.advent.days.*;
 import com.advent.parser.InputFetcher;
 
 import java.io.IOException;
@@ -30,6 +29,10 @@ public class Runner {
                 day = new Day01(startingPosition);
                 System.out.println("Day 1 - part2: " + day.part2(input));
                 break;
+            case "02":
+            case "2":
+                Day<Long> day2 = new Day02();
+                System.out.println("Day 2 - part1: " + day2.part1(input));
             default:
                 System.err.println("Day not implemented: " + dayArg);
         }
